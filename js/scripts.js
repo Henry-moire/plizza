@@ -58,6 +58,9 @@ $(document).ready(function()
 {
   $("#magheritaButton").click(function()
   {
+    var pizzaSize = "";
+    var pizzaCrust = "";
+    var pizzaTopping = "";
     $(".largeCheckbox").click(function()
     {
       if($(this).prop("checked") == true)
@@ -79,13 +82,7 @@ $(document).ready(function()
         var pizzaSize = "Small";
       }
     })
-    $(".crispyCheckbox").click(function()
-    {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaCrust = "Crispy";
-      }
-    })
+    
     $(".crispyCheckbox").click(function()
     {
       if($(this).prop("checked") == true)
@@ -107,5 +104,40 @@ $(document).ready(function()
         var pizzaCrust = "Gluten-free";
       }
     })
+
+    $(".chickenCheckbox").click(function()
+    {
+      if($(this).prop("checked") == true)
+      {
+        var pizzaTopping = "Chicken";
+      }
+    })
+    $(".mushroomCheckbox").click(function()
+    {
+      if($(this).prop("checked") == true)
+      {
+        var pizzaTopping = "Mushroom";
+      }
+    })
+    $(".pineappleCheckbox").click(function()
+    {
+      if($(this).prop("checked") == true)
+      {
+        var pizzaTopping = "Pineapple";
+      }
+    })
+    $(".pepperoniCheckbox").click(function()
+    {
+      if($(this).prop("checked") == true)
+      {
+        var pizzaTopping = "Pepperoni";
+      }
+    })
+
+    var newPizza = new Pizza("Magherita", pizzaSize, pizzaCrust, pizzaTopping);
+
+    $("ul#order").append("<li><span class='pizzaOrder'>" + newPizza.flavor + ", " + 
+    newPizza.pizzaSize + ", " + newPizza.pizzaCrust + ", " + newPizza.pizzaTopping + 
+    "</span></li>");
   });
 });
