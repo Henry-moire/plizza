@@ -9,3 +9,31 @@
     margin-right: auto;
     width: 90%;
 }
+
+.sizeChoices{
+    display: none;
+}
+
+.crustChoices{
+    display: none;
+}
+
+.toppingChoices{
+    display: none;
+}
+
+#magheritaButton{
+    display: none;
+}
+
+#mushroomButton{
+    display: none;
+}
+
+#pepperoniButton{
+    display: none;
+}
+
+#vegeterianButton{
+    display: none;
+}
