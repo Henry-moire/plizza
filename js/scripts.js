@@ -61,19 +61,17 @@ $(document).ready(function()
     var pizzaSize = "";
     var pizzaCrust = "";
     var pizzaToppings = "";
-    if($(".largeCheckbox").is(":checked"))
+    
+    if($(".largeCheckbox").prop(":checked"))
     {
       pizzaSize = "Large";
       console.log(pizzaSize);
     }
-    
-    
     $(".mediumCheckbox").click(function()
     {
       if($(this).prop("checked") == true)
       {
         var pizzaSize = "Medium";
-        console.log(pizzaSize);
       }
     })
     $(".smallCheckbox").click(function()
