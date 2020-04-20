@@ -10,15 +10,11 @@
     width: 90%;
 }
 
-.sizeChoices{
+.choices{
     display: none;
 }
 
-.crustChoices{
-    display: none;
-}
-
-.toppingChoices{
+.checkout{
     display: none;
 }
 
