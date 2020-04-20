@@ -60,19 +60,20 @@ $(document).ready(function()
   {
     var pizzaSize = "";
     var pizzaCrust = "";
-    var pizzaTopping = "";
-    $(".largeCheckbox").click(function()
+    var pizzaToppings = "";
+    if($(".largeCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaSize = "Large";
-      }
-    })
+      pizzaSize = "Large";
+      console.log(pizzaSize);
+    }
+    
+    
     $(".mediumCheckbox").click(function()
     {
       if($(this).prop("checked") == true)
       {
         var pizzaSize = "Medium";
+        console.log(pizzaSize);
       }
     })
     $(".smallCheckbox").click(function()
@@ -130,14 +131,14 @@ $(document).ready(function()
     {
       if($(this).prop("checked") == true)
       {
-        var pizzaTopping = "Pepperoni";
+        var pizzaToppings = "Pepperoni";
       }
     })
 
-    var newPizza = new Pizza("Magherita", pizzaSize, pizzaCrust, pizzaTopping);
+    var newPizza = new Pizza("Magherita", pizzaSize, pizzaCrust, pizzaToppings);
 
     $("ul#order").append("<li><span class='pizzaOrder'>" + newPizza.flavor + ", " + 
-    newPizza.pizzaSize + ", " + newPizza.pizzaCrust + ", " + newPizza.pizzaTopping + 
+    newPizza.size + ", " + newPizza.crust + ", " + newPizza.toppings + 
     "</span></li>");
   });
 });
