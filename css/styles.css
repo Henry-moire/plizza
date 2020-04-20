@@ -37,3 +37,39 @@
 #vegeterianButton{
     display: none;
 }
+
+.magheritaClickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.magheritaClickable:hover {
+    text-decoration: underline;
+}
+
+.mushroomClickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.mushroomClickable:hover {
+    text-decoration: underline;
+}
+
+.pepperoniClickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.pepperoniClickable:hover {
+    text-decoration: underline;
+}
+
+.vegeterianClickable {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.vegeterianClickable:hover {
+    text-decoration: underline;
+}
