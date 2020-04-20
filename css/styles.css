@@ -3,69 +3,79 @@
     text-align: center;
 }
 
-.pizzaImage{
+.pizzaImage
+{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
 }
 
-.choices{
+.choices
+{
     display: none;
 }
 
-.checkout{
+#magheritaButton
+{
     display: none;
 }
 
-#magheritaButton{
+#mushroomButton
+{
     display: none;
 }
 
-#mushroomButton{
+#pepperoniButton
+{
     display: none;
 }
 
-#pepperoniButton{
+#vegeterianButton
+{
     display: none;
 }
 
-#vegeterianButton{
-    display: none;
-}
-
-.magheritaClickable {
+.magheritaClickable
+{
     cursor: pointer;
     color: #0088cc;
 }
 
-.magheritaClickable:hover {
+.magheritaClickable:hover
+{
     text-decoration: underline;
 }
 
-.mushroomClickable {
+.mushroomClickable
+{
     cursor: pointer;
     color: #0088cc;
 }
 
-.mushroomClickable:hover {
+.mushroomClickable:hover
+{
     text-decoration: underline;
 }
 
-.pepperoniClickable {
+.pepperoniClickable
+{
     cursor: pointer;
     color: #0088cc;
 }
 
-.pepperoniClickable:hover {
+.pepperoniClickable:hover
+{
     text-decoration: underline;
 }
 
-.vegeterianClickable {
+.vegeterianClickable
+{
     cursor: pointer;
     color: #0088cc;
 }
 
-.vegeterianClickable:hover {
+.vegeterianClickable:hover
+{
     text-decoration: underline;
 }
