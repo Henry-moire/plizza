@@ -61,94 +61,50 @@ $(document).ready(function()
     var pizzaSize = "";
     var pizzaCrust = "";
     var pizzaToppings = "";
-    var checkboxCheck = document.getElementById("largeCheckbox");
     
     if($("#largeCheckbox").is(":checked"))
     {
       pizzaSize = "Large";
-      console.log("pizzaSize");
     } 
-    else
+    else if($("#mediumCheckbox").is(":checked"))
     {
-      console.log("Nopizzaslice");
+      pizzaSize = "Medium";
     }
-    $(".mediumCheckbox").click(function()
+    else if($("#smallCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaSize = "Medium";
-      }
-    })
-    $(".smallCheckbox").click(function()
-    {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaSize = "Small";
-      }
-    })
+      pizzaSize = "Small";
+    } 
+    
     
     if($("#crispyCheckbox").is(":checked"))
     {
       pizzaCrust = "Crispy";
-      console.log("pizzaSize");
     } 
-
-    $(".crispyCheckbox").click(function()
+    else if($("#stuffedCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaCrust = "Crispy";
-      }
-    })
-    $(".stuffedCheckbox").click(function()
+      pizzaCrust = "Stuffed";
+    }
+    else if($("#glutenCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaCrust = "Stuffed";
-      }
-    })
-    $(".glutenCheckbox").click(function()
-    {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaCrust = "Gluten-free";
-      }
-    })
+      pizzaCrust = "Gluten-free";
+    }
 
     if($("#chickenCheckbox").is(":checked"))
     {
       pizzaToppings = "Chicken";
-      console.log("pizzaSize");
     } 
-
-    $(".chickenCheckbox").click(function()
+    else if($("#mushroomCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaTopping = "Chicken";
-      }
-    })
-    $(".mushroomCheckbox").click(function()
+      pizzaToppings = "Mushroom";
+    } 
+    else if($("#pineappleCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaTopping = "Mushroom";
-      }
-    })
-    $(".pineappleCheckbox").click(function()
+      pizzaToppings = "Pineapple";
+    }
+    else if($("#pepperoniCheckbox").is(":checked"))
     {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaTopping = "Pineapple";
-      }
-    })
-    $(".pepperoniCheckbox").click(function()
-    {
-      if($(this).prop("checked") == true)
-      {
-        var pizzaToppings = "Pepperoni";
-      }
-    })
+      pizzaToppings = "Pepperoni";
+    }
 
     var newPizza = new Pizza("Magherita", pizzaSize, pizzaCrust, pizzaToppings);
 
