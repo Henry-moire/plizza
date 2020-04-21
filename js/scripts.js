@@ -113,3 +113,183 @@ $(document).ready(function()
     "</span></li>");
   });
 });
+
+$(document).ready(function()
+{
+  $("#mushroomButton").click(function()
+  {
+    var pizzaSize = "";
+    var pizzaCrust = "";
+    var pizzaToppings = "";
+    
+    if($("#largeCheckbox").is(":checked"))
+    {
+      pizzaSize = "Large";
+    } 
+    else if($("#mediumCheckbox").is(":checked"))
+    {
+      pizzaSize = "Medium";
+    }
+    else if($("#smallCheckbox").is(":checked"))
+    {
+      pizzaSize = "Small";
+    } 
+    
+    
+    if($("#crispyCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Crispy";
+    } 
+    else if($("#stuffedCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Stuffed";
+    }
+    else if($("#glutenCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Gluten-free";
+    }
+
+    if($("#chickenCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Chicken";
+    } 
+    else if($("#mushroomCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Mushroom";
+    } 
+    else if($("#pineappleCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pineapple";
+    }
+    else if($("#pepperoniCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pepperoni";
+    }
+
+    var newPizza = new Pizza("Mushroom", pizzaSize, pizzaCrust, pizzaToppings);
+
+    $("ul#order").append("<li><span class='pizzaOrder'>" + newPizza.flavor + ", " + 
+    newPizza.size + ", " + newPizza.crust + ", " + newPizza.toppings + 
+    "</span></li>");
+  });
+});
+
+$(document).ready(function()
+{
+  $("#pepperoniButton").click(function()
+  {
+    var pizzaSize = "";
+    var pizzaCrust = "";
+    var pizzaToppings = "";
+    
+    if($("#largeCheckbox").is(":checked"))
+    {
+      pizzaSize = "Large";
+    } 
+    else if($("#mediumCheckbox").is(":checked"))
+    {
+      pizzaSize = "Medium";
+    }
+    else if($("#smallCheckbox").is(":checked"))
+    {
+      pizzaSize = "Small";
+    } 
+    
+    
+    if($("#crispyCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Crispy";
+    } 
+    else if($("#stuffedCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Stuffed";
+    }
+    else if($("#glutenCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Gluten-free";
+    }
+
+    if($("#chickenCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Chicken";
+    } 
+    else if($("#mushroomCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Mushroom";
+    } 
+    else if($("#pineappleCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pineapple";
+    }
+    else if($("#pepperoniCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pepperoni";
+    }
+
+    var newPizza = new Pizza("Pepperoni", pizzaSize, pizzaCrust, pizzaToppings);
+
+    $("ul#order").append("<li><span class='pizzaOrder'>" + newPizza.flavor + ", " + 
+    newPizza.size + ", " + newPizza.crust + ", " + newPizza.toppings + 
+    "</span></li>");
+  });
+});
+
+$(document).ready(function()
+{
+  $("#vegeterianButton").click(function()
+  {
+    var pizzaSize = "";
+    var pizzaCrust = "";
+    var pizzaToppings = "";
+    
+    if($("#largeCheckbox").is(":checked"))
+    {
+      pizzaSize = "Large";
+    } 
+    else if($("#mediumCheckbox").is(":checked"))
+    {
+      pizzaSize = "Medium";
+    }
+    else if($("#smallCheckbox").is(":checked"))
+    {
+      pizzaSize = "Small";
+    } 
+    
+    
+    if($("#crispyCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Crispy";
+    } 
+    else if($("#stuffedCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Stuffed";
+    }
+    else if($("#glutenCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Gluten-free";
+    }
+
+    if($("#chickenCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Chicken";
+    } 
+    else if($("#mushroomCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Mushroom";
+    } 
+    else if($("#pineappleCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pineapple";
+    }
+    else if($("#pepperoniCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Pepperoni";
+    }
+
+    var newPizza = new Pizza("Vegeterian", pizzaSize, pizzaCrust, pizzaToppings);
+
+    $("ul#order").append("<li><span class='pizzaOrder'>" + newPizza.flavor + ", " + 
+    newPizza.size + ", " + newPizza.crust + ", " + newPizza.toppings + 
+    "</span></li>");
+  });
+});
