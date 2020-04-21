@@ -61,11 +61,16 @@ $(document).ready(function()
     var pizzaSize = "";
     var pizzaCrust = "";
     var pizzaToppings = "";
+    var checkboxCheck = document.getElementById("largeCheckbox");
     
-    if($(".largeCheckbox").prop(":checked"))
+    if($("#largeCheckbox").is(":checked"))
     {
       pizzaSize = "Large";
-      console.log(pizzaSize);
+      console.log("pizzaSize");
+    } 
+    else
+    {
+      console.log("Nopizzaslice");
     }
     $(".mediumCheckbox").click(function()
     {
@@ -82,6 +87,12 @@ $(document).ready(function()
       }
     })
     
+    if($("#crispyCheckbox").is(":checked"))
+    {
+      pizzaCrust = "Crispy";
+      console.log("pizzaSize");
+    } 
+
     $(".crispyCheckbox").click(function()
     {
       if($(this).prop("checked") == true)
@@ -103,6 +114,12 @@ $(document).ready(function()
         var pizzaCrust = "Gluten-free";
       }
     })
+
+    if($("#chickenCheckbox").is(":checked"))
+    {
+      pizzaToppings = "Chicken";
+      console.log("pizzaSize");
+    } 
 
     $(".chickenCheckbox").click(function()
     {
